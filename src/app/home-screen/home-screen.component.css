@@ -1,0 +1,22 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+/*.style{        
+            
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }*/
+      
+.lregister {
+    background-color:#008CBA; 
+    border: solid;
+    color: white;
+    padding: 15px 32px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    justify-content: center;
+} 

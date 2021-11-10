@@ -1,0 +1,29 @@
+<mat-toolbar  color ='primary'>
+    <span>Vehicle License  </span>
+  </mat-toolbar>
+  <div class="container-fluid">
+  <form #userForm = "ngForm"  >
+ 
+<div class="form-group">
+  <label>Attach Photo</label>
+  <input type="file"  required 
+  name="photo" >
+</div>
+
+<div>
+  <label>Attach ID Proof</label>
+  <input type="file" (change)="onFileSelected($event)" name="id"/>
+  
+
+</div>
+
+<div>
+  <label>Attach Address Proof</label>
+  <input type="file" (change)="onFileSelected($event)" name="address"/>
+</div>
+
+<div>
+  <button type="button" (click)='onUpload()' routerLink='/payment'>Upload</button>
+</div>
+</form>
+</div>
