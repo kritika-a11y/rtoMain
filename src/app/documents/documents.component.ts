@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentsComponent implements OnInit {
   fileName = '';
+  submitted= false;
  
   _url='http://localhost:3000/register';
   file!: File;
@@ -28,6 +29,7 @@ export class DocumentsComponent implements OnInit {
        reportProgress:true,
        observe:'events'
      }).subscribe(
+       data => this.submitted=true,
        events => console.log(events)
      )
   }

@@ -1,3 +1,4 @@
+import { fingerprint } from '@angular/compiler/src/i18n/digest';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,3 +14,6 @@ export class HelpComponent implements OnInit {
   }
 
 }
+
+
+

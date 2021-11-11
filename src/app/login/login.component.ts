@@ -11,7 +11,7 @@ import { RegisterUserService } from '../register-user.service';
 })
 export class LoginComponent implements OnInit {
 
-  user = new NewUser(1,'','');
+  user = new NewUser(1,'','','');
   msg ='';
   constructor(private _service: RegisterUserService, private _route: Router) { }
 
@@ -29,3 +29,4 @@ export class LoginComponent implements OnInit {
     )
   }
 }
+

@@ -16,4 +16,5 @@ export class RegisterUserService {
   public logInUserFromRemote(user: NewUser){
       return this._http.post<any>(this._url, user);
   }
+  
 }

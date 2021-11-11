@@ -6,10 +6,12 @@ import { HelpComponent } from './help/help.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { LoginComponent } from './login/login.component';
 import { PaymentComponent } from './payment/payment.component';
+import { RegisterComponent } from './register/register.component';
 import { UserComponentComponent } from './user-component/user-component.component';
 
 const routes: Routes = [
-  {path:'',component:HomeScreenComponent},
+  {path:'',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
   {path:'help',component:HelpComponent},
   {path:'home',component:HomeScreenComponent},
   {path:'contact',component:ContactComponent},

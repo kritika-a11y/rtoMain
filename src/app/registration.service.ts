@@ -9,10 +9,11 @@ import { throwError } from 'rxjs';
 })
 export class RegistrationService {
 
-  _url = 'http://localhost:3000/register';
+  _url = 'http://localhost:3000/apply';
 
   constructor(private _http: HttpClient) { }
-
+  
+  
   enroll (user: User) {
     return this._http.post<any>(this._url, user)
     .pipe(catchError(this.errorHandler))      
